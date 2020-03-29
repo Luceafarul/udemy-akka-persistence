@@ -12,6 +12,8 @@
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
 .idea/**/shelf
+.idea/modules/udemy-akka-persistence-build.iml
+.idea/modules/udemy-akka-persistence.iml
 
 # Generated files
 .idea/**/contentModel.xml
@@ -109,7 +111,7 @@ hs_err_pid*
 ### SBT ###
 # Simple Build Tool
 # http://www.scala-sbt.org/release/docs/Getting-Started/Directories.html#configuring-version-control
-
+.idea/sbt.xml
 dist/*
 target/
 lib_managed/
