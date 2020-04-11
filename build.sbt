@@ -15,11 +15,11 @@ lazy val protobufVersion = "3.6.1"
 resolvers += Resolver.jcenterRepo
 
 libraryDependencies ++= Seq(
-  "com.typesafe.akka"          %% "akka-persistence" % akkaVersion,
+  "com.typesafe.akka" %% "akka-persistence" % akkaVersion,
 
   // local levelDB stores
-  "org.iq80.leveldb"            % "leveldb"          % leveldbVersion,
-  "org.fusesource.leveldbjni"   % "leveldbjni-all"   % leveldbjniVersion,
+  "org.iq80.leveldb" % "leveldb" % leveldbVersion,
+  "org.fusesource.leveldbjni" % "leveldbjni-all" % leveldbjniVersion,
 
   // JDBC with PostgreSQL 
   "org.postgresql" % "postgresql" % postgresVersion,
@@ -29,6 +29,10 @@ libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-persistence-cassandra" % cassandraVersion,
   "com.typesafe.akka" %% "akka-persistence-cassandra-launcher" % cassandraVersion % Test,
 
+  "com.typesafe.akka" %% "akka-testkit" % akkaVersion % "test",
+  "commons-io" % "commons-io" % "2.6",
+  "org.scalatest" %% "scalatest" % "3.1.1" % "test",
+
   // Google Protocol Buffers
-  "com.google.protobuf" % "protobuf-java"  % protobufVersion,
+  "com.google.protobuf" % "protobuf-java" % protobufVersion,
 )
